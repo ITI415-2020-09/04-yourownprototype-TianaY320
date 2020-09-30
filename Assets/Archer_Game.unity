@@ -320,7 +320,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b0a11d6dcdad4544fb54aaf246d06391, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  prefabArrow: {fileID: 693546541221780463, guid: 8a36931e5db0969479805976c3cd99f2, type: 3}
   launchPoint: {fileID: 0}
+  launchPos: {x: 0, y: -5, z: 0}
+  arrow: {fileID: 0}
+  aimingMode: 0
 --- !u!1001 &1537841215
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -338,7 +342,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400002, guid: 022a72268e462114788abcf0c0b07418, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 400002, guid: 022a72268e462114788abcf0c0b07418, type: 3}
       propertyPath: m_LocalPosition.z
