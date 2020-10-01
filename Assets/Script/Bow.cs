@@ -5,6 +5,8 @@ using UnityEngine;
 public class Bow : MonoBehaviour
 {
 
+    static private Bow S;
+
     [Header("Set in Inspector")]
     public GameObject prefabArrow;
     public float velocityMult = 8f;
@@ -16,8 +18,19 @@ public class Bow : MonoBehaviour
     public bool aimingMode;
     private Rigidbody arrowRigidbody;
 
+    static public Vector3 LAUNCH_POS
+    {
+        get
+        {
+            if (S == null) return Vector3.zero;
+            return S.launchPos;
+        }
+    }
+
     void Awake()
     {
+        S = this;
+
         Transform launchPointTrans = transform.Find("LaunchPoint");
         launchPoint = launchPointTrans.gameObject;
         launchPoint.SetActive(false);
