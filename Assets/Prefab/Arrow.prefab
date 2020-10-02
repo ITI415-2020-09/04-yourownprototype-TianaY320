@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 693546541222070221}
   - component: {fileID: 693546541218678765}
   - component: {fileID: 693546541219775789}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: default
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -94,8 +94,9 @@ GameObject:
   - component: {fileID: -9192665973250839871}
   - component: {fileID: -7376132071224327795}
   - component: {fileID: -2183595439886941910}
-  - component: {fileID: 8498059179197490019}
-  m_Layer: 0
+  - component: {fileID: 4501501521814578616}
+  - component: {fileID: -5738925242632026557}
+  m_Layer: 10
   m_Name: Arrow
   m_TagString: Arrow
   m_Icon: {fileID: 0}
@@ -191,12 +192,12 @@ MeshCollider:
   m_GameObject: {fileID: 693546541221780463}
   m_Material: {fileID: 13400000, guid: 245f063f2049db343a6e9902e033f046, type: 2}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 4
   m_Convex: 1
   m_CookingOptions: -1
   m_Mesh: {fileID: 4300000, guid: 432dd2b7c2581c744a40ca43b1307c17, type: 3}
---- !u!114 &8498059179197490019
+--- !u!114 &4501501521814578616
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -205,6 +206,21 @@ MonoBehaviour:
   m_GameObject: {fileID: 693546541221780463}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 93a540bd5c0e9464bb821ea59f5dcda1, type: 3}
+  m_Script: {fileID: 11500000, guid: 017d01370b3edbf46bc3be93bfa46afd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  scoreGT: {fileID: 0}
+--- !u!136 &-5738925242632026557
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 693546541221780463}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 0.30621058
+  m_Height: 19.541088
+  m_Direction: 1
+  m_Center: {x: 0.018975515, y: 0.0001125336, z: -1.0641805}

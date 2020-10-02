@@ -85,6 +85,8 @@ public class Bow : MonoBehaviour
             arrowRigidbody.velocity = -mouseDelta * velocityMult;
             FollowCam.POI = arrow;
             arrow = null;
+            ArrowLine.S.poi = arrow;
         }
+
     }
 }
